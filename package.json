@@ -1,0 +1,27 @@
+{
+  "name": "team-builder",
+  "version": "1.0.0",
+  "description": "Using inquirer based inputs ran by jest, the program will ask for user input on their team",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlosC074/Team-Builder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarlosC074/Team-Builder/issues"
+  },
+  "homepage": "https://github.com/CarlosC074/Team-Builder#readme",
+  "devDependencies": {
+    "jest": "^27.2.0"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "inquirer": "^8.1.5"
+  }
+}
