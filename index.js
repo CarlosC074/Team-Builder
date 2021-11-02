@@ -1,15 +1,14 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const Choices = require('inquirer/lib/objects/choices');
 
 function mainMenu() {
     inquirer
         .prompt([
             {
-                type: 'list',
+                type: 'confirm',
                 message: 'You ok? you ok? You okay, Annie?',
                 name: 'mainConfirm',
-                choices: [""], 
+                 
             }
         ])
     .then((data) => {
