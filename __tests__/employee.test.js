@@ -9,7 +9,7 @@ describe('Employee', () => {
 
             const employee = new Employee(name, id, email);
 
-            expect(employee.getName()).toEqual('John Doe');
+            expect(employee.getName()).toEqual(`<td>John Doe</td>`);
         })
     })
 
@@ -21,11 +21,11 @@ describe('Employee', () => {
 
             const employee = new Employee(name, id, email);
 
-            expect(employee.getid()).toEqual('001');
+            expect(employee.getId()).toEqual( `<td>001</td>`);
         })
     })
 
-    describe('getId()', () => {
+    describe('getEmail()', () => {
         it("should return the email: john.doe@gmail.com", () => {
             const name = 'John Doe';
             const id = '001';
@@ -33,7 +33,7 @@ describe('Employee', () => {
 
             const employee = new Employee(name, id, email);
 
-            expect(employee.getId()).toEqual('john.doe@gmail.com');
+            expect(employee.getEmail()).toEqual(`<td><a href="mailto:carlos.castano74@gmail.com">john.doe@gmail.com</a></td>`);
         })
     })
 
@@ -45,7 +45,7 @@ describe('Employee', () => {
 
             const employee = new Employee(name, id, email);
 
-            expect(employee.getId()).toEqual('john.doe@gmail.com');
+            expect(employee.getRole()).toEqual(`<td>employee</td>`);
         })
     })
 })
