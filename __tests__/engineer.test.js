@@ -22,6 +22,6 @@ describe("Engineer", () => {
     })
 
     describe("getGithub()", () => {
-        expect(john.getGithub()).toBe(`<td>https://github.com/${github}</td>`)
+        expect(john.getGithub()).toBe(`<td><a href= "https://github.com/${github}">${github}</a></td>`)
     })
 })

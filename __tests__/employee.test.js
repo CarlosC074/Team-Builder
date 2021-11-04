@@ -33,7 +33,7 @@ describe('Employee', () => {
 
             const employee = new Employee(name, id, email);
 
-            expect(employee.getEmail()).toEqual(`<td><a href="mailto:carlos.castano74@gmail.com">john.doe@gmail.com</a></td>`);
+            expect(employee.getEmail()).toEqual(`<td><a href="mailto:john.doe@gmail.com">john.doe@gmail.com</a></td>`);
         })
     })
 
